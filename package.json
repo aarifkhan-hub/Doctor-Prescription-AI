@@ -1,0 +1,20 @@
+{
+  "name": "doctor-prescription-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI SaaS to read and explain handwritten doctor prescriptions",
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend"
+  ],
+  "scripts": {
+    "dev:frontend": "npm --workspace apps/frontend run dev",
+    "dev:backend": "npm --workspace apps/backend run dev",
+    "build:frontend": "npm --workspace apps/frontend run build",
+    "build:backend": "npm --workspace apps/backend run build",
+    "lint": "npm --workspace apps/frontend run lint && npm --workspace apps/backend run lint"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
